@@ -61,8 +61,24 @@ input {
     width: calc(100% -90px);
 }
 
-h2 .temp{
+h2.temp {
     margin: 0;
     margin-bottom: .3rem;
-    
+
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+/* .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+} */
