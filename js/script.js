@@ -25,7 +25,9 @@ let weather = {
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed);
         document.querySelector('.city').innerText = 'Weather in ' + name;
+        // STRING TEMPLATE EXAMPLE
         document.querySelector('.icon').src = `https://openweathermap.org/img/wn/${icon}.png`;
+        // TRADITIONAL CONCATENATE EXAMPLE
         // document.querySelector('.icon').src = "https://openweathermap.org/img/wn/"+ icon + ".png";
 
     }
