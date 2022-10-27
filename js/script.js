@@ -46,3 +46,11 @@ let weather = {
     document.querySelector('.search button').addEventListener('click',() => {
         weather.search();
 })
+
+    document.querySelector('.search__bar').addEventListener('keyup',(event) => {
+        if(event.key == 'Enter'){
+            weather.search();
+        }
+    })
+
+    weather.fetchWeather('Malabon');
