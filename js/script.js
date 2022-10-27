@@ -40,8 +40,4 @@ let weather = {
         this.fetchWeather(document.querySelector('.search__bar').value)
     },
 
-    button: function(button) {
-        this.fetchWeather(document.querySelector('.btn').value)
-    }
-
 };
