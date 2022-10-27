@@ -27,14 +27,21 @@ let weather = {
         document.querySelector('.city').innerText = 'Weather in ' + name;
         // STRING TEMPLATE EXAMPLE
         document.querySelector('.icon').src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+        document.querySelector('.description').innerText=description;
         // TRADITIONAL CONCATENATE EXAMPLE
         // document.querySelector('.icon').src = "https://openweathermap.org/img/wn/"+ icon + "@2x.png";
         document.querySelector('.temp').innerText = temp + "°C"
         document.querySelector('.humidity').innerText="Humidity: " + humidity + "%";
         document.querySelector('.wind').innerText="Wind Speed: " + speed + "km/h";
+        document.querySelector('.description').innerText=description;
     },
 
     search: function() {
         this.fetchWeather(document.querySelector('.search__bar').value)
+    },
+
+    button: function(button) {
+        this.fetchWeather(document.querySelector('.btn').value)
     }
+
 };
