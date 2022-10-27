@@ -41,3 +41,7 @@ let weather = {
     },
 
 };
+
+document.querySelector('.search button').addEventListener('click',() => {
+    weather.search();
+})
